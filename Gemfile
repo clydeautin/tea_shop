@@ -37,6 +37,7 @@ gem "bootsnap", require: false
 
 gem "jsonapi-serializer"
 gem "faraday"
+gem "factory_bot_rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -44,7 +45,6 @@ group :development, :test do
   gem "capybara"
   gem "launchy"
   gem "pry"
-  gem "factory_bot_rails"
   gem "faker"
   gem "simplecov"
   gem 'shoulda-matchers'
