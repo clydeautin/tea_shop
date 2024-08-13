@@ -1,24 +1,15 @@
-# README
+# Tea Subscription app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Routes
 
-Things you may want to cover:
+Subscribe a customer to a tea subscription:
 
-* Ruby version
+POST `/api/v1/customer_subscriptions`
 
-* System dependencies
+Cancel a customer's tea subscription
 
-* Configuration
+PATCH `/api/v1/customer_subscriptions/:customer_id`
 
-* Database creation
+See all of a customer's subscriptions (active and canceled)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+GET `/api/v1/customers/:customer_id/subscriptions`
