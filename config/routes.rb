@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       post '/customers', to: 'customers#create'
+      delete '/customers/:id', to: 'customers#destroy'
+      get '/customers/:id', to: 'customers#show'
+      get '/customers/:id/subscriptions', to: 'customer_subscriptions#index'
+
+      post '/customer_subscriptions', to: 'customer_subscriptions#create'
+      patch '/customer_subscriptions/:id', to: 'customer_subscriptions#update'
     end
   end
 end
